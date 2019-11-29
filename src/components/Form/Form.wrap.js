@@ -7,7 +7,8 @@ const initialValues = {
   sex: '',
   birthdate: '',
   description: '',
-  coat: ''
+  coat: '',
+  subcoat: ''
 };
 
 export default withFormik({
