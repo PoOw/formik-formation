@@ -13,6 +13,7 @@ const initialValues = {
 };
 
 export default withFormik({
+  enableReinitialize: true,
   mapPropsToValues: () => initialValues,
   handleSubmit: (values, { props }) => {
     console.log(values);
