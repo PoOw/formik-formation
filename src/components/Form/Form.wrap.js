@@ -8,7 +8,8 @@ const initialValues = {
   birthdate: '',
   description: '',
   coat: '',
-  subcoat: ''
+  subcoat: '',
+  genealogy: []
 };
 
 export default withFormik({

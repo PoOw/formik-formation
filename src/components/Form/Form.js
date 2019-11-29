@@ -1,7 +1,8 @@
 import React from 'react';
-import { Field, getIn } from 'formik';
+import { Field, getIn, FieldArray } from 'formik';
 
 import { COATS, SUBCOATS } from 'constants.js';
+import GenealogyArray from 'components/GenealogyArray';
 
 import Style from './Form.style.js';
 
@@ -61,6 +62,9 @@ const HorseSellingForm = ({ values, setFieldValue }) => {
           ) : (
             <Field name="subcoat" />
           ))}
+
+        <label htmlFor="genealogy">Genealogy</label>
+        <FieldArray name="genealogy" render={GenealogyArray} />
 
         <Style.ButtonContainer>
           <button type="save">Submit</button>

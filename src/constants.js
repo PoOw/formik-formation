@@ -23,3 +23,9 @@ export const SUBCOATS = {
     { value: 'roseGray', label: 'Rose gray' }
   ]
 };
+
+export const RELATIONS = [
+  { value: 'father', label: 'Father' },
+  { value: 'mother', label: 'Mother' },
+  { value: 'child', label: 'Child' }
+];
