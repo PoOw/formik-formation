@@ -3,7 +3,11 @@ import { withFormik } from 'formik';
 import Form from './Form';
 
 const initialValues = {
-  name: ''
+  name: '',
+  sex: '',
+  birthdate: '',
+  description: '',
+  coat: ''
 };
 
 export default withFormik({
